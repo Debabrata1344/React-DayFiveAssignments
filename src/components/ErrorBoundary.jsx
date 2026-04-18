@@ -14,7 +14,7 @@ class ErrorBoundary extends React.Component {
         if (this.state.hasError) {
             return (
                 <div style={errorContainer}>
-                    <h2>⚠️ Gallery Error</h2>
+                    <h2>⚠️ Something Went Wrong</h2>
                     <p>{this.state.error?.message || "Could not load users."}</p>
                     <button onClick={() => window.location.reload()} style={btnStyle}>
                         Try Again
